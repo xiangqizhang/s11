@@ -8,7 +8,7 @@
     - yarn :
         - brew install yarn
     - 模型导出 :
-        - cd ./TF_Model_Export
+        - cd ./TF_Model_Export/mnist
         - yarn
         - yarn watch
         - 执行训练,训练完成后提示下载模型
