@@ -81,32 +81,6 @@ export default class DrawNode extends cc.Component {
         this.priviewNode.active = true;
         this.priviewNode.getComponent(cc.Sprite).spriteFrame = new cc.SpriteFrame(renderTexture);
         this._pixelsData = pixelsData;
-
-        //FIXME: DEBUG
-
-        let scalePixels = PixelUtil.scalePixels(this._pixelsData, this.node.getContentSize());
-        // width = 28,height = 28;
-
-        // {
-        //     let str = '';
-        //     let j = 0;
-        //     for (let i = 0; i < this._pixelsData.length; i+=4) {
-        //         str += this._pixelsData[i] + ' '
-        //         if(j >= width * 4){
-        //             console.log(str + new Date().getTime() + Math.random());
-        //             j = 0;
-        //             str = '';
-        //         }
-        //         ++j;
-        //     }
-        // }
-        // for(let i = 0;i<height;++i){
-        //     let str = '';
-        //     for(let j = 0;j<width*4;j+=4){
-        //         str+= scalePixels[i * width * 4 + j] + ' ';
-        //     }
-        //     console.log(str + new Date().getTime() + Math.random());
-        // }
     }
 
     getPixelsData() {
